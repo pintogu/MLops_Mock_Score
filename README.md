@@ -5,7 +5,7 @@ This repository contains a very simple FastAPI application that exposes a mock s
 
 ---
 
-## What this does
+## What it does
 
 * Runs a FastAPI application
 * Exposes one endpoint: `/score`
