@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mock-score
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mock-score
+  template:
+    metadata:
+      labels:
+        app: mock-score
+    spec:
+      containers:
+        - name: mock-score
+          image: mlops-mock-score:1.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
+
